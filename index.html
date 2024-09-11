@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fraud Detection</title>
+</head>
+<body>
+    <h1>Fraud Detection Form</h1>
+    <form method="post">
+        <label>Type:</label><br>
+        <select name="type">
+            <option value="TRANSFER">TRANSFER</option>
+            <option value="CASH_OUT">CASH_OUT</option>
+            <option value="PAYMENT">PAYMENT</option>
+            <option value="DEBIT">DEBIT</option>
+        </select><br><br>
+        <label>Amount:</label><br>
+        <input type="text" name="amount"><br><br>
+        <label>Old Balance Origin:</label><br>
+        <input type="text" name="oldbalanceOrg"><br><br>
+        <label>New Balance Origin:</label><br>
+        <input type="text" name="newbalanceOrig"><br><br>
+        <label>Old Balance Destination:</label><br>
+        <input type="text" name="oldbalanceDest"><br><br>
+        <label>New Balance Destination:</label><br>
+        <input type="text" name="newbalanceDest"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <h2>{{ result }}</h2>
+</body>
+</html>
